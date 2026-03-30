@@ -99,6 +99,7 @@ Below is the current list of published profiles, organised by industry niche.
 
 A profile for a performance fishing and outdoor apparel brand based in the United States. The page covers the brand's full product catalogue including fishing shirts, performance hoodies, hunting gear, sun protection clothing, hats, bottoms, and accessories. The design uses deep ocean tones, heavy display typography, and editorial-style card layouts to reflect the brand's rugged outdoor identity.
 
+**Website:** [https://www.dagonfishing.com](https://www.dagonfishing.com)
 **Live profile:** [https://seobrandguru.github.io/Profile_Hub/profiles/dagon-fishing.html](https://seobrandguru.github.io/Profile_Hub/profiles/dagon-fishing.html)
 
 ---
@@ -107,6 +108,7 @@ A profile for a performance fishing and outdoor apparel brand based in the Unite
 
 A profile for an international educational games company producing board games and card games designed for learning. Products include a faith-based trivia game, a fast-paced general knowledge card game, and a two-challenge strategy board game. The design uses bold geometric shapes, a dark navy background, and a vivid amber accent colour to convey the playful and energetic nature of the brand.
 
+**Website:** [https://sfmintl.com](https://sfmintl.com)
 **Live profile:** [https://seobrandguru.github.io/Profile_Hub/profiles/sfm-international.html](https://seobrandguru.github.io/Profile_Hub/profiles/sfm-international.html)
 
 ---
@@ -115,6 +117,7 @@ A profile for an international educational games company producing board games a
 
 A profile for a Manchester-based law firm offering solicitor services for personal and commercial clients. The page presents the firm's practice areas, office locations, and social presence in a tone appropriate to the legal profession — authoritative, restrained, and trustworthy. The design uses dark backgrounds, refined serif typography, and warm gold accents to communicate credibility and discretion.
 
+**Website:** [https://blackmontlegal.com](https://blackmontlegal.com)
 **Live profile:** [https://seobrandguru.github.io/Profile_Hub/profiles/blackmont-legal.html](https://seobrandguru.github.io/Profile_Hub/profiles/blackmont-legal.html)
 
 ---
@@ -123,6 +126,7 @@ A profile for a Manchester-based law firm offering solicitor services for person
 
 A profile for a medical aesthetics clinic operating in Manchester and Bolton, offering laser hair removal, dermal filler treatments, and anti-wrinkle injections. The design reflects the clinical luxury positioning of the brand — warm cream tones, a refined editorial layout, and elegant serif headings. Each treatment is presented as a card linking directly to the relevant service page on the clinic's website.
 
+**Website:** [https://medlaserclinics.com](https://medlaserclinics.com)
 **Live profile:** [https://seobrandguru.github.io/Profile_Hub/profiles/medlaser-clinics.html](https://seobrandguru.github.io/Profile_Hub/profiles/medlaser-clinics.html)
 
 ---
@@ -131,6 +135,7 @@ A profile for a medical aesthetics clinic operating in Manchester and Bolton, of
 
 A profile for a UK luxury bedding brand selling duvets, pillows, mattress toppers, throws, bed linen, nursery bedding, cushions, and protectors. The brand offers free UK delivery and a 30-day returns policy. The page design uses a warm off-white background, classic serif typography, and a large watermark wordmark to reflect the premium and restful identity of the brand.
 
+**Website:** [https://rohi.co.uk](https://rohi.co.uk)
 **Live profile:** [https://seobrandguru.github.io/Profile_Hub/profiles/rohi-bedding.html](https://seobrandguru.github.io/Profile_Hub/profiles/rohi-bedding.html)
 
 ---
@@ -139,6 +144,7 @@ A profile for a UK luxury bedding brand selling duvets, pillows, mattress topper
 
 A profile for a UK company specialising in secure electronic recycling and certified data erasure. The company handles lost property electronics for transport operators, businesses, and local councils — providing GDPR-compliant data destruction and full certificates of destruction. The design uses a dark background with green accents and a subtle circuit-grid texture to reflect the technical and environmental nature of the service.
 
+**Website:** [https://www.readysetrecycle.co.uk](https://www.readysetrecycle.co.uk)
 **Live profile:** [https://seobrandguru.github.io/Profile_Hub/profiles/ready-set-recycle.html](https://seobrandguru.github.io/Profile_Hub/profiles/ready-set-recycle.html)
 
 ---
@@ -147,6 +153,7 @@ A profile for a UK company specialising in secure electronic recycling and certi
 
 A profile for a specialist outdoor footwear brand producing anti-sink boots designed for marshland, muddy terrain, and snow. The boots use a unique sole technology that prevents the wearer from sinking into soft ground. The profile also links to the brand's YouTube channel and Instagram. The design uses a deep earthy background, heavy display typography, and a field-guide stamp aesthetic to match the rugged and utilitarian nature of the product.
 
+**Website:** [https://mudderboots.com](https://mudderboots.com)
 **Live profile:** [https://seobrandguru.github.io/Profile_Hub/profiles/mudder-boots.html](https://seobrandguru.github.io/Profile_Hub/profiles/mudder-boots.html)
 
 ---
