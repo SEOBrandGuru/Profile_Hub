@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFM International — Educational Board Games</title>
+<meta name="description" content="SFM International creates educational board games that make learning genuinely fun. Shop W.I.T.S Bible edition, card games, and strategy board games.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Josefin+Sans:wght@300;400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1a1a2e;color:#f0f0f0;font-family:'Josefin Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+.geo-bg{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.geo-circle{position:absolute;border-radius:50%;opacity:0.05}
+.hero{padding:80px 48px 60px;position:relative}
+.tagline{font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:#f6c347;margin-bottom:16px}
+h1{font-family:'Syne',sans-serif;font-size:clamp(52px,10vw,110px);font-weight:800;line-height:0.92;margin-bottom:20px}
+h1 em{font-style:normal;color:#f6c347}
+.desc{font-size:15px;color:#888;max-width:520px;line-height:1.8;margin-bottom:56px;font-weight:300}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;padding:0 48px 60px}
+.prod-card{background:rgba(246,195,71,0.05);border:1px solid rgba(246,195,71,0.14);padding:28px 24px;text-decoration:none;color:#f0f0f0;transition:all 0.3s;position:relative}
+.prod-card:hover{background:rgba(246,195,71,0.1);border-color:#f6c347;transform:translateY(-4px)}
+.pc-num{font-family:'Space Mono',monospace;font-size:32px;font-weight:700;color:rgba(246,195,71,0.18);position:absolute;top:16px;right:20px}
+.pc-badge{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:0.12em;background:#f6c347;color:#1a1a2e;padding:3px 10px;margin-bottom:14px;font-weight:700}
+.prod-card h3{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;margin-bottom:10px;line-height:1.2}
+.prod-card p{font-size:13px;color:#777;line-height:1.6;font-weight:300}
+.pc-link{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#f6c347}
+.cta-bar{background:#f6c347;padding:40px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.cta-bar p{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:#1a1a2e;max-width:420px;line-height:1.2}
+.cta-bar a{background:#1a1a2e;color:#f6c347;padding:14px 32px;text-decoration:none;font-size:13px;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;transition:all 0.2s}
+.cta-bar a:hover{background:#0a0a1a}
+@media(max-width:640px){.hero,.cta-bar{padding-left:24px;padding-right:24px}.products{padding:0 24px 48px}}
+</style>
+</head>
+<body>
+<div class="geo-bg">
+  <div class="geo-circle" style="width:600px;height:600px;background:#f6c347;top:-200px;right:-150px"></div>
+  <div class="geo-circle" style="width:300px;height:300px;background:#5b4fcf;bottom:-50px;left:-50px"></div>
+</div>
+<div class="hero">
+  <div class="tagline">Educational Board Games</div>
+  <h1>Learn.<br><em>Play.</em><br>Win.</h1>
+  <p class="desc">SFM International creates educational board games that make learning genuinely fun — for classrooms, families, and faith communities worldwide.</p>
+</div>
+<div class="products">
+  <a class="prod-card" href="https://sfmintl.com/products/wits-bible" target="_blank" rel="noopener">
+    <div class="pc-num">01</div>
+    <div class="pc-badge">Faith Edition</div>
+    <h3>W.I.T.S — Bible</h3>
+    <p>Faith-based gameplay with puzzles and questions rooted in biblical stories and doctrine. Builds religious literacy and critical thinking.</p>
+    <div class="pc-link">Shop now →</div>
+  </a>
+  <a class="prod-card" href="https://sfmintl.com/products/wits-cards" target="_blank" rel="noopener">
+    <div class="pc-num">02</div>
+    <div class="pc-badge">Card Game</div>
+    <h3>W.I.T.S — Cards</h3>
+    <p>Fast-paced card game for any environment. Trivia, puzzles, and rapid cognition challenges every turn.</p>
+    <div class="pc-link">Shop now →</div>
+  </a>
+  <a class="prod-card" href="https://sfmintl.com/products/2-ways" target="_blank" rel="noopener">
+    <div class="pc-num">03</div>
+    <div class="pc-badge">Board Game</div>
+    <h3>2-Ways</h3>
+    <p>Tackle two challenges simultaneously. A strategy board game built for families and classrooms. Logic, planning, and teamwork.</p>
+    <div class="pc-link">Shop now →</div>
+  </a>
+</div>
+<div class="cta-bar">
+  <p>Discover the full SFM International games collection</p>
+  <a href="https://sfmintl.com" target="_blank" rel="noopener">Visit sfmintl.com</a>
+</div>
+</body>
+</html>

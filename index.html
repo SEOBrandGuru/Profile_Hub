@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProfileHub — Digital Brand Profiles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080c10;
+  --surface:#0d1318;
+  --border:rgba(255,255,255,0.07);
+  --text:#e8eaed;
+  --muted:#6b7280;
+  --accent:#4f9cf9;
+  --accent2:#a78bfa;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+
+/* NOISE OVERLAY */
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");opacity:0.03;pointer-events:none;z-index:0}
+
+/* GRID BG */
+body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(79,156,249,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(79,156,249,0.03) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;z-index:0}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 40px;height:60px;display:flex;align-items:center;justify-content:space-between;background:rgba(8,12,16,0.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;letter-spacing:-0.02em;color:var(--text)}
+.nav-logo span{color:var(--accent)}
+.nav-tag{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:0.1em}
+
+/* HERO */
+.hero{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:100px 24px 60px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(79,156,249,0.25);background:rgba(79,156,249,0.06);padding:6px 16px;border-radius:100px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;color:var(--accent);margin-bottom:40px}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(52px,9vw,110px);font-weight:800;line-height:0.92;letter-spacing:-0.03em;margin-bottom:28px;max-width:900px}
+.hero h1 .line2{color:transparent;-webkit-text-stroke:1px rgba(255,255,255,0.2)}
+.hero h1 .accent-word{color:var(--accent)}
+.hero-sub{font-size:16px;color:var(--muted);max-width:480px;line-height:1.8;margin-bottom:52px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.btn-primary{background:var(--accent);color:#fff;padding:14px 32px;text-decoration:none;font-size:14px;font-weight:500;border-radius:6px;letter-spacing:0.03em;transition:all 0.2s}
+.btn-primary:hover{background:#3d8de8;transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--border);color:var(--muted);padding:14px 32px;text-decoration:none;font-size:14px;border-radius:6px;letter-spacing:0.03em;transition:all 0.2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.2);color:var(--text)}
+
+/* FLOATING STAT CARDS */
+.stats-row{position:relative;z-index:1;display:flex;justify-content:center;gap:20px;padding:0 24px 80px;flex-wrap:wrap}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px 32px;text-align:center;min-width:160px}
+.stat-num{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;color:var(--text);line-height:1}
+.stat-num span{color:var(--accent)}
+.stat-label{font-size:12px;color:var(--muted);margin-top:6px;letter-spacing:0.05em}
+
+/* FEATURES */
+.features{position:relative;z-index:1;padding:80px 40px;border-top:1px solid var(--border)}
+.section-label{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.2em;color:var(--accent);text-transform:uppercase;margin-bottom:20px}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:48px}
+.feat-item{background:var(--surface);padding:32px 28px;transition:background 0.2s}
+.feat-item:hover{background:#101820}
+.feat-icon{width:36px;height:36px;border-radius:8px;background:rgba(79,156,249,0.1);border:1px solid rgba(79,156,249,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:16px}
+.feat-item h3{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;margin-bottom:8px}
+.feat-item p{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* HOW IT WORKS */
+.how{position:relative;z-index:1;padding:80px 40px;border-top:1px solid var(--border)}
+.steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:32px;margin-top:48px}
+.step{position:relative;padding-left:52px}
+.step-num{position:absolute;left:0;top:0;font-family:'Space Mono',monospace;font-size:28px;font-weight:700;color:rgba(79,156,249,0.2);line-height:1}
+.step h4{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px;padding-top:4px}
+.step p{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* MARQUEE */
+.marquee-wrap{position:relative;z-index:1;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;overflow:hidden;background:var(--surface)}
+.marquee-track{display:flex;gap:0;white-space:nowrap;animation:marquee 28s linear infinite}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-item{display:inline-flex;align-items:center;gap:16px;padding:0 32px;font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:0.08em}
+.marquee-item::after{content:'·';color:rgba(79,156,249,0.4);font-size:20px}
+
+/* CTA SECTION */
+.cta-section{position:relative;z-index:1;padding:100px 40px;text-align:center;border-top:1px solid var(--border)}
+.cta-section h2{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,64px);font-weight:800;letter-spacing:-0.02em;margin-bottom:20px;line-height:1}
+.cta-section p{font-size:16px;color:var(--muted);max-width:460px;margin:0 auto 40px;line-height:1.8}
+.cta-glow{display:inline-block;position:relative}
+.cta-glow::before{content:'';position:absolute;inset:-20px;background:radial-gradient(ellipse,rgba(79,156,249,0.12) 0%,transparent 70%);pointer-events:none}
+
+/* FOOTER */
+footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:32px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:gap;gap:16px}
+footer .f-logo{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;color:var(--muted)}
+footer .f-logo span{color:var(--accent)}
+footer .f-copy{font-family:'Space Mono',monospace;font-size:11px;color:rgba(107,114,128,0.5);letter-spacing:0.05em}
+
+/* RESPONSIVE */
+@media(max-width:640px){
+  nav{padding:0 20px}
+  .hero{padding:80px 20px 40px}
+  .features,.how,.cta-section{padding-left:20px;padding-right:20px}
+  footer{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Profile<span>Hub</span></div>
+  <div class="nav-tag">// digital brand profiles</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow"><span class="hero-dot"></span>Brand Profile Platform</div>
+  <h1>Your brand.<br><span class="line2">One</span> <span class="accent-word">clean</span><br><span class="line2">profile.</span></h1>
+  <p class="hero-sub">A dedicated digital profile for every brand — beautifully designed, fast-loading, and built to convert visitors into customers.</p>
+  <div class="hero-btns">
+    <a href="#features" class="btn-primary">See what we build</a>
+    <a href="#how" class="btn-ghost">How it works</a>
+  </div>
+</section>
+
+<div class="stats-row">
+  <div class="stat-card"><div class="stat-num">7<span>+</span></div><div class="stat-label">Profile types</div></div>
+  <div class="stat-card"><div class="stat-num">100<span>%</span></div><div class="stat-label">Static & fast</div></div>
+  <div class="stat-card"><div class="stat-num">0<span>ms</span></div><div class="stat-label">Backend latency</div></div>
+  <div class="stat-card"><div class="stat-num">DA<span>95</span></div><div class="stat-label">Hosted authority</div></div>
+</div>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">GitHub Pages</span>
+    <span class="marquee-item">Vercel</span>
+    <span class="marquee-item">Netlify</span>
+    <span class="marquee-item">Cloudflare Pages</span>
+    <span class="marquee-item">Firebase Hosting</span>
+    <span class="marquee-item">Render</span>
+    <span class="marquee-item">Surge.sh</span>
+    <span class="marquee-item">GitLab Pages</span>
+    <span class="marquee-item">GitHub Pages</span>
+    <span class="marquee-item">Vercel</span>
+    <span class="marquee-item">Netlify</span>
+    <span class="marquee-item">Cloudflare Pages</span>
+    <span class="marquee-item">Firebase Hosting</span>
+    <span class="marquee-item">Render</span>
+    <span class="marquee-item">Surge.sh</span>
+    <span class="marquee-item">GitLab Pages</span>
+  </div>
+</div>
+
+<section class="features" id="features">
+  <div class="section-label">// What we deliver</div>
+  <div style="max-width:560px">
+    <h2 style="font-family:'Syne',sans-serif;font-size:clamp(32px,5vw,52px);font-weight:800;letter-spacing:-0.02em;line-height:1.05">Every profile built to<br>perform and impress.</h2>
+  </div>
+  <div class="features-grid">
+    <div class="feat-item">
+      <div class="feat-icon">&#9670;</div>
+      <h3>Unique design per brand</h3>
+      <p>Each profile has its own aesthetic — typography, colour palette, and layout matched to the brand's identity.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon">&#9650;</div>
+      <h3>All real links, no redirects</h3>
+      <p>Every button points directly to the brand's actual pages. No link aggregator middlemen, no tracking loss.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon">&#9632;</div>
+      <h3>Zero backend required</h3>
+      <p>Pure HTML, CSS, and minimal JS. Deploy anywhere in seconds — no servers, no databases, no runtime costs.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon">&#9679;</div>
+      <h3>SEO-ready structure</h3>
+      <p>Clean semantic HTML, proper heading hierarchy, and descriptive link anchors for maximum crawlability.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon">&#9671;</div>
+      <h3>Mobile-first responsive</h3>
+      <p>Every profile looks sharp on any screen size — phones, tablets, and desktop — without compromise.</p>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon">&#9651;</div>
+      <h3>High-authority hosting</h3>
+      <p>Deploy on GitHub Pages, Vercel, Netlify or Cloudflare Pages for DA 90+ domain authority backlinks.</p>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="section-label">// How it works</div>
+  <div style="max-width:480px;margin-bottom:0">
+    <h2 style="font-family:'Syne',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-0.02em;line-height:1.1">From brand to live profile<br>in four steps.</h2>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h4>Provide your brand</h4>
+      <p>Share your website URL, social links, and a brief description of what your brand does.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h4>Profile is designed</h4>
+      <p>A unique, on-brand profile page is created with your real links embedded contextually throughout.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h4>Choose your host</h4>
+      <p>Pick from GitHub Pages, Vercel, Netlify, Cloudflare, or any static hosting platform.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <h4>Go live</h4>
+      <p>Upload your file and your profile is live — a clean, indexed, high-authority backlink to your site.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-glow">
+    <h2>Ready to build<br>your profile?</h2>
+  </div>
+  <p>Each profile is a standalone page — isolated, indexed, and built to represent your brand at its best.</p>
+  <a href="mailto:hello@profilehub.dev" class="btn-primary" style="font-size:15px;padding:16px 36px">Get in touch</a>
+</section>
+
+<footer>
+  <div class="f-logo">Profile<span>Hub</span></div>
+  <div class="f-copy">© 2025 · Static brand profiles · Built for the web</div>
+</footer>
+
+</body>
+</html>

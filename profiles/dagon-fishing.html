@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dagon Apparel — Fishing Shirts, Clothing & Gear</title>
+<meta name="description" content="Dagon Apparel crafts premium fishing shirts, performance clothing, and outdoor gear for serious anglers. Shop fishing shirts, hoodies, hunting gear and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0b1a24;color:#e8dcc8;font-family:'DM Sans',sans-serif;min-height:100vh}
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:60px 48px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0b1a24 0%,#1a3040 40%,#0d2535 100%)}
+.wave{position:absolute;bottom:0;left:0;right:0;height:260px;opacity:0.10}
+.deco{position:absolute;top:80px;right:60px;font-family:'Bebas Neue',sans-serif;font-size:200px;opacity:0.03;color:#7ab8d4;line-height:1;pointer-events:none;letter-spacing:-0.04em}
+.tag{display:inline-block;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#7ab8d4;border:1px solid rgba(122,184,212,0.3);padding:5px 12px;margin-bottom:28px}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,13vw,144px);line-height:0.9;letter-spacing:0.02em;color:#e8dcc8;margin-bottom:16px;position:relative;z-index:1}
+h1 span{color:#7ab8d4}
+.sub{font-size:15px;color:#8a9fa8;max-width:480px;line-height:1.7;margin-bottom:48px;position:relative;z-index:1}
+.links-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-bottom:60px;position:relative;z-index:1}
+.link-card{border:1px solid rgba(122,184,212,0.15);padding:18px 20px;text-decoration:none;color:#e8dcc8;transition:all 0.3s;background:rgba(122,184,212,0.04);position:relative;overflow:hidden}
+.link-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:#7ab8d4;transform:scaleY(0);transition:transform 0.3s;transform-origin:bottom}
+.link-card:hover{background:rgba(122,184,212,0.08);border-color:rgba(122,184,212,0.4)}
+.link-card:hover::before{transform:scaleY(1)}
+.lc-label{font-family:'Space Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.12em;color:#7ab8d4;margin-bottom:6px}
+.lc-title{font-size:14px;font-weight:500;line-height:1.4}
+.lc-arr{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:18px;color:#7ab8d4;opacity:0;transition:opacity 0.3s}
+.link-card:hover .lc-arr{opacity:1}
+.about-strip{background:rgba(122,184,212,0.05);border-top:1px solid rgba(122,184,212,0.1);padding:40px 48px;display:flex;gap:48px;flex-wrap:wrap;align-items:center;position:relative;z-index:1}
+.ab-item{flex:1;min-width:160px}
+.ab-num{font-family:'Bebas Neue',sans-serif;font-size:42px;color:#7ab8d4;line-height:1}
+.ab-desc{font-size:13px;color:#8a9fa8;margin-top:4px}
+@media(max-width:640px){.hero,.about-strip{padding-left:24px;padding-right:24px}.deco{font-size:100px;right:20px}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-bg"></div>
+  <svg class="wave" viewBox="0 0 1440 260" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 130 Q180 40 360 130 Q540 220 720 130 Q900 40 1080 130 Q1260 220 1440 130 V260 H0Z" fill="#7ab8d4"/>
+    <path d="M0 170 Q200 80 400 170 Q600 260 800 170 Q1000 80 1200 170 Q1350 260 1440 200 V260 H0Z" fill="#5a98b4" opacity="0.4"/>
+  </svg>
+  <div class="deco">DAGON</div>
+  <div class="tag">Premium Fishing Apparel</div>
+  <h1>Dagon<br><span>Apparel</span></h1>
+  <p class="sub">Built for the salt flats, the long shadows of ranch gates, and every adventure between. Performance gear for serious anglers.</p>
+  <div class="links-grid">
+    <a class="link-card" href="https://www.dagonfishing.com/collections" target="_blank" rel="noopener">
+      <div class="lc-label">Shop</div><div class="lc-title">All Collections</div><span class="lc-arr">→</span>
+    </a>
+    <a class="link-card" href="https://www.dagonfishing.com/collections/fishing-shirts" target="_blank" rel="noopener">
+      <div class="lc-label">Category</div><div class="lc-title">Fishing Shirts</div><span class="lc-arr">→</span>
+    </a>
+    <a class="link-card" href="https://www.dagonfishing.com/collections/performance-shirts" target="_blank" rel="noopener">
+      <div class="lc-label">Category</div><div class="lc-title">Performance Shirts</div><span class="lc-arr">→</span>
+    </a>
+    <a class="link-card" href="https://www.dagonfishing.com/collections/performance-hoodies" target="_blank" rel="noopener">
+      <div class="lc-label">Category</div><div class="lc-title">Performance Hoodies</div><span class="lc-arr">→</span>
+    </a>
+    <a class="link-card" href="https://www.dagonfishing.com/collections/hunting" target="_blank" rel="noopener">
+      <div class="lc-label">Category</div><div class="lc-title">Hunting Gear</div><span class="lc-arr">→</span>
+    </a>
+    <a class="link-card" href="https://www.dagonfishing.com/collections/hats" target="_blank" rel="noopener">
+      <div class="lc-label">Accessories</div><div class="lc-title">Hats &amp; Visors</div><span class="lc-arr">→</span>
+    </a>
+    <a class="link-card" href="https://www.dagonfishing.com/blogs/content" target="_blank" rel="noopener">
+      <div class="lc-label">Content</div><div class="lc-title">Blog &amp; Field Notes</div><span class="lc-arr">→</span>
+    </a>
+    <a class="link-card" href="https://www.dagonfishing.com/pages/about" target="_blank" rel="noopener">
+      <div class="lc-label">Company</div><div class="lc-title">Our Story</div><span class="lc-arr">→</span>
+    </a>
+  </div>
+</div>
+<div class="about-strip">
+  <div class="ab-item"><div class="ab-num">UPF</div><div class="ab-desc">Sun protection built in</div></div>
+  <div class="ab-item"><div class="ab-num">USA</div><div class="ab-desc">Designed in America</div></div>
+  <div class="ab-item" style="flex:2">
+    <div class="ab-desc" style="font-size:14px;color:#8a9fa8;line-height:1.7">Dagon Apparel crafts fishing shirts, performance clothing, and outdoor gear for anglers who demand more from their kit. From sun shirts to performance hoodies — built to perform where it matters.</div>
+    <a href="https://www.dagonfishing.com/" target="_blank" rel="noopener" style="display:inline-block;margin-top:16px;color:#7ab8d4;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(122,184,212,0.3);padding-bottom:2px">Visit dagonfishing.com →</a>
+  </div>
+</div>
+</body>
+</html>
